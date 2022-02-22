@@ -2,7 +2,8 @@ export const state = () => ({
   eventInformation: {
     title: 'This is the test title'
   },
-  program: {}
+  program: {},
+  services: {},
 })
 
 export const getters = {
@@ -11,6 +12,9 @@ export const getters = {
   },
   getProgram(state) {
     return state.program
+  },
+  services(state) {
+    return state.services
   }
 }
 
@@ -20,5 +24,8 @@ export const mutations = {
   },
   setProgram(state, program) {
     state.program = program
+  },
+  setServices(state, services) {
+    state.services = services
   }
 }

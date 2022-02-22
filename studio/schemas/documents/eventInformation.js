@@ -1,24 +1,24 @@
 export default {
   name: 'eventInformation',
   type: 'document',
-  title: 'Event Information',
+  title: 'Homepage Banner',
   __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'name',
       type: 'string',
-      title: 'Event name'
+      title: 'Website name'
     },
     {
       name: 'description',
       type: 'text',
       title: 'Description',
-      description: 'Describe your event for search engines and social media.'
+      description: 'Description for search engines and social media.'
     },
     {
       name: 'image',
       type: 'mainImage',
-      title: 'Event image'
+      title: 'Main image'
     },
     {
       name: 'schedule',

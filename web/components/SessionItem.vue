@@ -116,7 +116,6 @@ li.session .meta .sessiontype {
 li.session h3 {
   font-size: var(--font-title3-size);
   line-height: var(--font-title3-line-height);
-  font-weight: 600;
   margin: 0 0 0.5rem;
 }
 

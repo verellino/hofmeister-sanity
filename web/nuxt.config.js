@@ -32,18 +32,27 @@ export default {
   /*
    ** Global CSS
    */
-  css: [{ src: 'normalize.css' }],
+  css: [
+    { src: 'normalize.css' },
+    { src: 'vue-slick-carousel/dist/vue-slick-carousel.css' },
+],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/eventInformation'],
+  plugins: [
+    { src: '~/plugins/eventInformation.js' },
+    { src: '~/plugins/vue-slick-carousel.js' }
+  ],
 
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
-
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/sanity/module',
+    '@nuxtjs/google-fonts'
+  ],
   /*
    ** Set global info from sanity document
    */
@@ -51,6 +60,17 @@ export default {
     return sanityClient.fetch('*[_id == "eventInformation"]').then(res => res)
   },
 
+  googleFonts: {
+    display: 'swap',
+    prefetch: true,
+    families: {
+      'EB+Garamond': [400],
+      'Open+Sans': {
+        wght: [300, 400, 600],
+        ital: [300]
+      },
+    }
+  },
   /*
    ** Generate dynamic routes from data from sanity.
    ** Used only for generating static served HTML files
@@ -86,21 +106,6 @@ export default {
             }
           }
         }
-      }
-    },
-
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
       }
     }
   }

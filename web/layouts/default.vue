@@ -22,11 +22,11 @@ export default {
 </script>
 
 <style>
+@import '../styles/global.css';
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
 html {
-  font-family: var(--font-family-sans);
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
 }
@@ -36,6 +36,7 @@ body {
   background: var(--color-white);
   color: var(--color-black);
   margin: 0;
+  position: relative;
 }
 
 html,
@@ -47,9 +48,8 @@ body,
 }
 
 .title {
-  font-weight: 600;
-  font-size: var(--font-title2-size);
-  line-height: var(--font-title2-line-height);
+  font-size: var(--font-title1-size);
+  line-height: var(--font-title1-line-height);
   margin-bottom: 0.25rem;
   padding-bottom: 0;
 

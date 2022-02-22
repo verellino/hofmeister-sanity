@@ -9,6 +9,7 @@ import eventInformation from './documents/eventInformation'
 import person from './documents/person'
 import codeOfConduct from './documents/codeOfConduct'
 import session from './documents/session'
+import services from './documents/services'
 import program from './documents/program'
 
 // Object types
@@ -35,6 +36,7 @@ export default createSchema({
     person,
     venue,
     session,
+    services,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
