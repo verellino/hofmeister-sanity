@@ -32,6 +32,7 @@ export default {
       slickOptions: {
         slidesToShow: 1,
         centerMode: true,
+        centerPadding:	'20px',
         arrows: false
       }
     }

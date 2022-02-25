@@ -12,7 +12,7 @@ export default () =>
     .title('Content')
     .items([
       S.listItem()
-        .title('Event information')
+        .title('Homepage Banner')
         .icon(MdInfo)
         .child(
           S.editor()

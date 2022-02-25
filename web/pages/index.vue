@@ -27,14 +27,39 @@
       </div>
     </div>
 
-    <div class="homepage-section-container">
-      <h2>Our Services</h2>
+    <div class="homepage-section-container services-section">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+    </div>
+    <div class="px-32">
       <ServicesList :services="services" />
     </div>
 
+    <div class="homepage-section-container black-bg text-center">
+      <div class="px-64">
+        <img src="~/assets/images/Ellipse-Blue.png" alt="Hofmeister Blue" class="px-32">
+        <h2>Book a Consultation</h2>
+        <p>Anda sedang bingung? Jadwalkan konsultasi dengan klinik Tong Fang sekarang juga. Buka 24 Jam 7 hari seminggu.</p>
+        <a href="#" class="blue-cta">CHAT US NOW</a>
+      </div>
+    </div>
+    <div class="homepage-section-container text-center">
+      <div class="px-64">
+        <h2>Our Clients</h2>
+        <p>Anda sedang bingung? Jadwalkan konsultasi dengan klinik Tong Fang sekarang juga. Buka 24 Jam 7 hari seminggu.</p>
+        <div class="image-grid">
+
+        </div>
+        <nuxt-link to="/about">WHO WE ARE</nuxt-link>
+      </div>
+    </div>
     <div class="homepage-section-container">
-      <h2 class="sessionListTitle">Schedule</h2>
-      <SessionList :program="program" :info="info" />
+      <div class="px-64">
+        <div class="2-column">
+          <h2>The Workshop</h2>
+          <p>Jl. Ring Road Utara No.08, Nanggulan, Maguwoharjo, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -179,5 +204,8 @@ export default {
   box-sizing: border-box;
 }
 
+.services-section {
+  padding: 64px 1.5rem 0;
+}
 
 </style>
