@@ -37,6 +37,7 @@ h2{
     text-decoration: none;
     box-shadow: 2.09548px 1.04774px 4.71483px rgba(255, 255, 255, 0.05);
     border-radius: 2px;
+    font-weight: 600;
 }
 .secondary-cta{
     display: flex;
@@ -50,6 +51,7 @@ h2{
     text-decoration: none;
     box-shadow: 2.09548px 1.04774px 4.71483px rgba(255, 255, 255, 0.05);
     border-radius: 2px;
+    font-weight: 600;
 }
 .blue-cta{
     display: flex;

@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nuxt-link to="/" class="home">
-      <img src="~/assets/images/hofmeister-logotype.png" alt="Hofmeister">
+      <img src="~/assets/images/hofmeister-logotype.png" alt="Hofmeister" class="hof-logotype">
     </nuxt-link>
     <nav class="mobile-nav">
       <img src="~/assets/images/hamburger.png" alt="Menu">
@@ -44,9 +44,16 @@ export default {
   z-index: 999999;
 }
 
+.hof-logotype {
+  height: 20px;
+}
+
 @media screen and (min-width: 520px) {
   .header {
     max-width: var(--width-x-large);
+  }
+  .hof-logotype {
+    height: 40px;
   }
 }
 
