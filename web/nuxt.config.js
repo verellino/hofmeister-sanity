@@ -53,6 +53,9 @@ export default {
     '@nuxtjs/sanity/module',
     '@nuxtjs/google-fonts'
   ],
+  buildModules: [
+    '@nuxtjs/tailwindcss'
+  ],
   /*
    ** Set global info from sanity document
    */
